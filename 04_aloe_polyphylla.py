@@ -20,7 +20,19 @@ The turtle starts at position(0, 0) with heading 0 degrees.
 """
 
 ### YOUR CODE STARTS HERE
-
+turtle.speed(20)
+IAL = 5
+R = 10
+for h in range(13):
+    turtle.up()
+    turtle.goto(0,0)
+    turtle.right(360/5)
+    turtle.down()
+    for i in range(48):
+        DTSF = R*i
+        AL = IAL * (phi**(DTSF / 90)) 
+        turtle.forward(AL)
+        turtle.right(R)
 
 ### YOUR CODE ENDS HERE
 

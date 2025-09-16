@@ -25,8 +25,13 @@ The turtle starts at position(0, 0) with heading 0 degrees.
 """
 
 ### YOUR CODE STARTS HERE
-
-
+IAL = 5
+R = 10
+for i in range(48):
+    DTSF = R*i
+    AL = IAL * (phi**(DTSF / 90)) 
+    turtle.forward(AL)
+    turtle.right(R)
 ### YOUR CODE ENDS HERE
 
 turtle.exitonclick()
